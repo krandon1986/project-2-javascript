@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Righteous&display=swap');
+
+/* General Styling */
+
+body {
+    background-color: white;
+    font-family: "Raleway", sans-serif;
+    color: #445361;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    font-family: "Righteous", sans-serif;
+    font-size: 2.5rem;
+}
+
+/* images */
+
+#hero-image {
+    height: 300px;
+    width: 100%;
+    background: url('../images/RPS.jpg') no-repeat center;
+}
+
