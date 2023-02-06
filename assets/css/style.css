@@ -23,3 +23,18 @@ body {
     background: url('../images/RPS.jpg') no-repeat center;
 }
 
+
+/* buttons */
+.game-start {
+    margin-top: 40px;
+    background-color: #445361;
+    border: 1px transparent;
+    border-radius: 50px;
+    color: #ffffff;
+    padding: 15px 32px 15px 32px;
+}
+
+.game-start:active,
+.game-start:hover {
+    background-color: #0d1013;
+}
