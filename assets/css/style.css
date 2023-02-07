@@ -38,6 +38,73 @@ body {
     background-color: #0d1013;
 }
 
+.btn {
+    width: 220px;
+    height:30px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color:#ffffff;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.big-btn {
+    padding-top: 1px;
+    border-radius: 50%;
+    background-color: white;
+    border: 10px solid;
+    width: 80px;
+    height: 80px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
+
+}
+
+.big-btn::after {
+    content:attr(data-type);
+    font-size: 1rem;
+    color:#445361;
+    position: relative;
+    left: -0.5em;
+}
+
+.rock {
+    border-color: red;
+    color: red;
+}
+
+.rock:active,
+.rock:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.paper {
+    border-color: orange;
+    color: orange;
+}
+
+.paper:active,
+.paper:hover {
+    background-color:darkorange;
+    color: white;
+}
+
+.scissor {
+    border-color: green;
+    color: green;
+}
+
+.scissor:active,
+.scissor:hover {
+    background-color: #006400;
+    color: white;
+}
+
 /* footer */
 
 footer {
