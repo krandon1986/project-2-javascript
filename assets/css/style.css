@@ -19,8 +19,7 @@ body {
 
 #hero-image {
     height: 300px;
-    width: 100%;
-    background: url('../images/RPS.jpg') no-repeat center;
+    width: 45%;
 }
 
 
@@ -37,4 +36,19 @@ body {
 .game-start:active,
 .game-start:hover {
     background-color: #0d1013;
+}
+
+/* footer */
+
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding-top: 5px;
+    text-align: center;
+    color:#ffffff;
+    background-color: #000;
 }
