@@ -19,3 +19,22 @@ for (let button of buttons) {
         playGame(playerChoice);
     });
 }
+
+/**
+ * The main game function of accepting one paramater,
+ * which is the data-choice value of the selected button
+ */
+
+function playGame(playerChoice) {
+    playerImage.src = `assets/images/${choices[playerChoice]}.jpg`;
+    playerImage.alt = choices[playerChoice];
+
+    let computerChoice = Math.floor(Math.random()* 3);
+
+    computerImage.src = `assets/images/${choices[computerChoice]}.jpg`;
+    computerImage.alt = choices[computerChoice];
+
+    let result = checkwinner(choices[computerChoice], choices[playerChoice]);
+
+    updateScore(result);
+}
