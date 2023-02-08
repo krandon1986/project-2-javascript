@@ -104,6 +104,35 @@ body {
     background-color: #006400;
     color: white;
 }
+
+.main-menu {
+    margin-top: 40px;
+    background-color: #445361;
+    float: left;
+    border: 1px transparent;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 15px 32px 15px 32px;
+}
+
+.main-menu:active,
+.main-menu:hover {
+    background-color: #0d1013;
+}
+.restart {
+    margin-top: 40px;
+    background-color: #445361;
+    float: right;
+    border: 1px transparent;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 15px 32px 15px 32px;
+}
+
+.restart:active,
+.restart:hover {
+    background-color: #0d1013;
+}
 /* game area */
 
 .game-area {
@@ -128,6 +157,11 @@ body {
     width: 75%;
 }
 
+.score1 {
+    color:#008000;
+    font-weight: bold;
+}
+
 .computer {
     border: 4px solid red;
     float: right;
@@ -138,6 +172,20 @@ body {
     width: 75%;
 }
 
+.score2 {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.game-finish {
+    margin: 15rem auto;
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.15rem;
+}
 
 /* footer */
 
