@@ -13,20 +13,18 @@
     <h2 class="heading">Rock, Paper, Scissors</h2>
     <section class="game-area">
         <div class="control-area">
-            <button data-choice="0"class="btn big-btn rock"><i class="fa-regular fa-hand-back-fist"></i></button>
-            <button data-choice="1"class="btn big-btn paper"><i class="fa-regular fa-hand"></i></button>
-            <button data-choice="2" class="btn big-btn scissor"><i class="fa-regular fa-hand-scissors"></i></button>
+            <button aria-label="Rock" data-choice="0" class="btn big-btn rock"><i class="fa-regular fa-hand-back-fist"></i></button>
+            <button aria-label="Paper" data-choice="1" class="btn big-btn paper"><i class="fa-regular fa-hand"></i></button>
+            <button aria-label="Scissor" data-choice="2" class="btn big-btn scissor"><i class="fa-regular fa-hand-scissors"></i></button>
         </div>
-        <div id="game-stats"></div>
-        <br>
-
+        <div id="game-stats">Score five point to win!</div>
         <div class="player">
             <img id="player-image" src="assets/images/RPS.jpg" alt="Rock, Paper, Scissor">
             <h3 class="score1">Player Score: <span id="player-score">0</span></h3>
         </div>
         <div class="computer">
             <img id="computer-image" src="assets/images/RPS.jpg" alt="Rock, Paper, Scissor">
-            <h3 class="score2">Computer Score: <span id="player-score">0</span></h3>
+            <h3 class="score2">Computer Score: <span id="computer-score">0</span></h3>
         </div>
     </section>    
     <footer>
@@ -34,6 +32,7 @@
         <p>Rock beats scissor | Paper beats rock | Scissor beats paper</p>
     </footer>
     <!-- font awesome and java script -->
-    <script src="https://kit.fontawesome.com/39af327d44.js" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/39af327d44.js" crossorigin="anonymous"></script> 
+    <script src="assets/js/game.js"></script>   
 </body>
 </html>
