@@ -8,7 +8,7 @@ const computerScore = document.getElementById("computer-score");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const message = document.getElementById("game-stats");
-const choices = ["rock", "paper", "scissor"];
+const choices = ["rock", "paper", "scissor"]; 
 
 /**
  * Add the event listener to all the three buttons
@@ -18,6 +18,24 @@ for (let button of buttons) {
         let playerChoice = this.getAttribute("data-choice");
         playGame(playerChoice);
     });
+}
+
+/**
+ * 
+ */
+const tie = ()=>{
+    message.innerHTML = "Tie !";
+    message.style.color = "orange";
+}
+
+const win = ()=>{
+    message.innerHTML = "Player Won !";
+    message.style.color = "green";
+}
+
+const lose = ()=>{
+    message.innerHTML = "Computer Won !";
+    message.style.color = "red";
 }
 
 /**
