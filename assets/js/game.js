@@ -9,6 +9,8 @@ const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
 const message = document.getElementById("game-stats");
 const choices = ["rock", "paper", "scissor"]; 
+const playerIcon = document.querySelectorAll(".show-player");
+const computerIcon = document.querySelectorAll(".show-computer");
 
 /**
  * Add the event listener to all the three buttons
@@ -20,23 +22,6 @@ for (let button of buttons) {
     });
 }
 
-/**
- * 
- */
-const tie = ()=>{
-    message.innerHTML = "Tie !";
-    message.style.color = "orange";
-}
-
-const win = ()=>{
-    message.innerHTML = "Player Won !";
-    message.style.color = "green";
-}
-
-const lose = ()=>{
-    message.innerHTML = "Computer Won !";
-    message.style.color = "red";
-}
 
 /**
  * The main game function of accepting one paramater,
@@ -56,3 +41,30 @@ function playGame(playerChoice) {
 
     updateScore(result);
 }
+
+/**
+ * Displaying the victory of either the player or the computer
+ */
+
+
+const tie = ()=>{
+    message.innerHTML = "Tie !";
+    message.style.color = "orange";
+}
+
+const win = ()=>{
+    message.innerHTML = "Player Won !";
+    message.style.color = "green";
+}
+
+const lose = ()=>{
+    message.innerHTML = "Computer Won !";
+    message.style.color = "red";
+}
+
+/* If it is a tie */
+ if(playerIcon.className === computerIcon.className){
+    playerScore.innerHTML = playerScore.innerHTML;
+    computerScore.innerHTML = computerScore.innerHTML;
+ }
+
