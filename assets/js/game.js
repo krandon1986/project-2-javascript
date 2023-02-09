@@ -62,9 +62,37 @@ const lose = ()=>{
     message.style.color = "red";
 }
 
+
 /* If it is a tie */
  if(playerIcon.className === computerIcon.className){
     playerScore.innerHTML = playerScore.innerHTML;
     computerScore.innerHTML = computerScore.innerHTML;
+    tie();
  }
 
+ /* If it is not a tie */
+ else if(playerIcon.className === "rock" && computerIcon.className === "scissor"){
+    playerScore.innerHTML = playerScore;
+    playerScore++;
+    win();
+ }else if(playerIcon.className === "rock" && computerIcon.className === "paper"){
+    computerScore.innerHTML = computerScore;
+    computerScore++;
+    lose();
+ }else if(playerIcon.className === "paper" && computerIcon.className === "scissor"){
+    computerScore.innerHTML = computerScore;
+    computerScore++;
+    lose();
+ }else if(playerIcon.className === "paper" && computerIcon.className === "rock"){
+    playerScore.innerHTML = playerScore;
+    playerScore++;
+    win();
+ }else if(playerIcon.className === "scissor" && computerIcon.className === "rock"){
+    computerScore.innerHTML = computerScore;
+    computerScore++;
+    lose();
+ }else if(playerIcon.className === "scissor" && computerIcon.className === "paper"){
+    playerScore.innerHTML = playerScore;
+    playerScore++;
+    win();
+ }
