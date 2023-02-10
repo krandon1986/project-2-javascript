@@ -49,27 +49,27 @@ function playGame(playerChoice) {
 /**
  * Displaying the victory of either the player or the computer
  */
+
 let playerscore = 1;
 let computerscore = 1;
 
-const tie = ()=>{
+const tie = () =>{
     message.innerHTML = "Tie !";
     message.style.color = 'orange';
 }
 
-const win = ()=>{
+const win = () =>{
     message.innerHTML = "Player Won !";
     message.style.color = 'green';
 }
 
-const lose = ()=>{
+const lose = () =>{
     message.innerHTML = "Computer Won !";
     message.style.color = 'red';
 }
 
-
 /*Scoring */
-function checkwinner(){
+function checkwinner() {
     /* If it is a tie */
     if(playerIcon.className === computerIcon.className){
     playerScore.innerHTML = playerScore.innerHTML;
@@ -104,3 +104,4 @@ function checkwinner(){
     win();
     }
 }
+
