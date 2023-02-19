@@ -15,6 +15,26 @@ const choices = [rockIcon, paperIcon, scissorIcon];
 const playerIcon = document.querySelectorAll(".show-player");
 const computerIcon = document.querySelectorAll(".show-computer");
 
+/**
+ * Displaying the victory of either the player or the computer
+ */
+let computerscore = 1;
+let playerscore = 1;
+
+const tie = () =>{
+    message.innerHTML = "Tie !";
+    message.style.color = 'orange';
+}
+
+const win = () =>{
+    message.innerHTML = "Player Won !";
+    message.style.color = 'green';
+}
+
+const lose = () =>{
+    message.innerHTML = "Computer Won !";
+    message.style.color = 'red';
+}
 
 /**
  * Add the event listener to all the three buttons
@@ -32,6 +52,7 @@ for (let button of buttons) {
  * which is the data-choice value of the selected button
  */
 
+
 function playGame(playerChoice) {
     playerImage.src = `assets/images/${choices[playerChoice]}.jpg`;
     playerImage.alt = choices[playerChoice];
@@ -46,27 +67,6 @@ function playGame(playerChoice) {
     updateScore(result);
 }
 
-/**
- * Displaying the victory of either the player or the computer
- */
-
-let playerscore = 1;
-let computerscore = 1;
-
-const tie = () =>{
-    message.innerHTML = "Tie !";
-    message.style.color = 'orange';
-}
-
-const win = () =>{
-    message.innerHTML = "Player Won !";
-    message.style.color = 'green';
-}
-
-const lose = () =>{
-    message.innerHTML = "Computer Won !";
-    message.style.color = 'red';
-}
 
 /*Scoring */
 function checkwinner() {
