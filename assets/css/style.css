@@ -207,3 +207,8 @@ footer {
     background-color: #000;
 }
 
+@media (max-width: 375px) {
+    .game-area {
+        width: 50%;
+    }
+}

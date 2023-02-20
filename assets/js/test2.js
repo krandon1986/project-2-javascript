@@ -23,9 +23,7 @@ const message = docment.querySelector(".game-stats");
 message.textContent = "Score five points to win!";
 
 buttons.forEach((button)=>{button.addEventListeners('click', ()=>{
-    
-    playerImage.src = `assets/images/${choices[playerChoice]}.jpg`;
-    playerImage.alt = choices[playerChoice];
+
 
     playerChoice = button.class;
     if (playerChoice == "rock"){
@@ -47,14 +45,12 @@ buttons.forEach((button)=>{button.addEventListeners('click', ()=>{
 
 function computerplay(computerChoice){
     let ComNum = Math.floor(Math.random() * 3);
-    computerImage.src = `assets/images/${choices[computerChoice]}.jpg`;
-    computerImage.alt = choices[computerChoice];
     
     if (ComNum == 0){
         computerChoice = "rock";
     }
     else if (ComNum == 1){
-        computerChoice = "paper";
+        computerChoice= "paper";
     }else if (ComNum == 2){
         computerChoice = "scissor";
     }
@@ -75,5 +71,22 @@ function roundplay (){
     message.style.color = 'green';
     playerscore++;
     }
+    else if (result == 2){
+    message.innerHTML = "Computer Won !";
+    message.style.color = 'red';
+    computerscore++;
+    }
+}
 
+function playGame(){
+    message.textContent = "Score five points to win!";
+    roundplay();
+    player.textContent = `Player Score: ${playerScore}`;
+    computer.textContent = `Computer Score: ${computerScore}`;
+    if (playerScore == 5){
+        window.location.href = "won.html";
+    }
+    else if (computerScore == 5){
+        window.location.href = "loss.html";
+    }
 }
