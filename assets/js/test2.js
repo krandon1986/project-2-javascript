@@ -61,3 +61,19 @@ function computerplay(computerChoice){
     return ComNum;
 }
 
+function roundplay (){
+    let vic_Array = [[0, 2, 1],
+                    [1, 0, 2],
+                    [2, 1, 0]];
+    let result = vic_Array[playerChoiceInt] [computerChoiceInt];
+    if (result == 0){
+    message.innerHTML = "Tie !";
+    message.style.color = 'orange';
+    }
+    else if (result == 1){
+    message.innerHTML = "Player Won !";
+    message.style.color = 'green';
+    playerscore++;
+    }
+
+}
